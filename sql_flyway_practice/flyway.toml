@@ -1,0 +1,32 @@
+databaseType = "MySql"
+id = "97cb5bd1-02c3-45a7-9c42-9bcfe70bec06"
+name = "sql_flyway_practice"
+
+[flyway]
+callbackLocations = [ "filesystem:callbacks" ]
+locations = [ "filesystem:migrations" ]
+mixed = true
+outOfOrder = true
+schemaModelLocation = "schema-model"
+validateMigrationNaming = true
+
+[flywayDesktop]
+enableMigrations = true
+developmentEnvironment = "development"
+shadowEnvironment = "shadow"
+
+  [flywayDesktop.generate]
+  undoScripts = false
+
+[redgateCompare]
+filterFile = "filter.rgf"
+
+[redgateCompare.mysql.options.ignores]
+ignoreNewlinesInTextObjects = "off"
+
+[environments.target1]
+url = "jdbc:mysql://localhost:3306/test"
+user = "root"
+password = "pass"
+schemas = [ "test" ]
+displayName = "test"
