@@ -7,8 +7,8 @@ TODO:
 
 ---
 postgres 
-- [X] postgres db using flyway migration mgmt with Docker
-- [ ] postgres db with views, indexes, and exhaustive diagramming to show database design.
+- [X] postgres db using flyway migration mgmt with Docker - see [sql_flyway_practice]()
+- [ ] postgres db with views, indexes, and exhaustive diagramming to show database design. - see [startup_task_tracker]
 - [ ] postgres db using various extensions to show extensibility and application. 
 - [ ] postgres db under continuous load, develop a set of queries that reveal stats and analysis of db. 
 - [ ] postgres db under load and chaos test to show engineering mastery, scale, and proclivity for defensive design. 
