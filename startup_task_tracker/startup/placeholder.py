@@ -1,0 +1,1 @@
+# TODO: startup script. add data to each table such that the queries will work. 
